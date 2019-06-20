@@ -89,7 +89,7 @@ df$IMPACT_CL=gsub("([[:alpha:]])([[:alpha:]]+)", "\\U\\1\\L\\2", df$IMPACT_CL, p
 ## create UI data
 year_ui <- sort(unique(df$ISO_YEAR[nchar(df$ISO_YEAR) == 4])) #Incorrect Year in data
 
-levels_ui <- c("Below seasonal threshold", "Low", "Moderate", "High", "Extra-ordinary", "Not Available", "No Impact") #inconsistent spellings in data
+levels_ui <- c("Below Seasonal Threshold", "Low", "Moderate", "High", "Extra-ordinary", "Not Available", "No Impact") #inconsistent spellings in data
 
 confidence_ui <- c("Low", "Medium", "High", "Not Available") # insconsistent spellings in data
 
