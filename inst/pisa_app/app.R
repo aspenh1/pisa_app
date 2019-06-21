@@ -44,7 +44,7 @@ ui <- navbarPage(
                fluidRow(pisaROutput("map_transmission", width = "100%", height = "450px")),
                fluidRow(pisaROutput("heatmap_transmission",
                                     width = "100%",
-                                    height = paste0(length(unique(df$COUNTRY_TITLE))*40, "px")))
+                                    height = paste0(length(unique(df$COUNTRY_TITLE))*50, "px")))
         ),
       # Seriousness Tab
       tabPanel(title = "Seriousness",
