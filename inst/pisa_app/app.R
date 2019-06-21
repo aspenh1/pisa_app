@@ -52,7 +52,7 @@ ui <- navbarPage(
                fluidRow(pisaROutput("map_seriousness", width = "100%", height = "450px")),
                fluidRow(pisaROutput("heatmap_seriousness",
                                     width = "100%",
-                                    height = paste0(length(unique(df$COUNTRY_TITLE))*40, "px")))
+                                    height = paste0(length(unique(df$COUNTRY_TITLE))*50, "px")))
                ),
       # Impact Tab
       tabPanel(title = "Impact",
@@ -60,7 +60,7 @@ ui <- navbarPage(
                fluidRow(pisaROutput("map_impact", width = "100%", height = "450px")),
                fluidRow(pisaROutput("heatmap_impact",
                                     width = "100%",
-                                    height = paste0(length(unique(df$COUNTRY_TITLE))*40, "px")))
+                                    height = paste0(length(unique(df$COUNTRY_TITLE))*50, "px")))
                )
       )
     )
