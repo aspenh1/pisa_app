@@ -213,7 +213,7 @@ server <- function(input, output,session) {
                                       cl_var = "TRANSMISSION_CL",
                                       com_var = "TRANSMISSION_COM")) %>%
       defineColorScale(color_palette = list("green","yellow", "orange", "red", "purple", "lightgray", "gray"),
-                       color_key = list("Below", "Low", "Moderate", "High", "Extra &nbsp;-&nbsp; ordinary", "Not Available", "Not Applicable")) %>%
+                       color_key = list("Below", "Low", "Moderate", "High", "Extra-ordinary", "Not Available", "Not Applicable")) %>%
       definePlotMargin(left = 110) %>%
       defineTimeInterval(interval = weeks)
 
@@ -236,7 +236,7 @@ server <- function(input, output,session) {
                                       cl_var = "SERIOUSNESS_CL",
                                       com_var = "SERIOUSNESS_COM")) %>%
       defineColorScale(color_palette = list("green","yellow", "orange", "red", "purple", "lightgray", "gray"),
-                       color_key = list("Below", "Low", "Moderate", "High", "Extra-ordinary", "Not Available", "Not Applicable")) %>%
+                       color_key = list("Below", "Low", "Moderate", "High", "Extra\\-ordinary", "Not Available", "Not Applicable")) %>%
       definePlotMargin(top = 0, left = 10, bottom = 100, right = 150)%>%
       assignMapColor(country = list("GL", "EH"), color = "darkgrey")
 
