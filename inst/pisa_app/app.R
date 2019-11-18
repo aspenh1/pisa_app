@@ -212,7 +212,7 @@ server <- function(input, output,session) {
                                       z_var = "TRANSMISSION",
                                       cl_var = "TRANSMISSION_CL",
                                       com_var = "TRANSMISSION_COM")) %>%
-      defineColorScale(color_palette = list("green","yellow", "orange", "red", "purple", "lightgray", "gray"),
+      defineColorScale(color_palette = list("green","yellow", "orange", "red", 800080, "lightgray", "gray"),
                        color_key = list("Below", "Low", "Moderate", "High", "Extra-ordinary", "Not Available", "Not Applicable")) %>%
       definePlotMargin(left = 110) %>%
       defineTimeInterval(interval = weeks)
