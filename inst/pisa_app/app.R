@@ -202,7 +202,7 @@ server <- function(input, output,session) {
     #draw chart
     pisaR() %>%
       createLayer(layerType = "heatmap",
-                  layerColor = list("green","yellow", "orange", "red", "darkred"),
+                  layerColor = list("green","yellow", "orange", "red", "purple"),
                   layerLabel = "heat",
                   layerData = df_that %>%
                     select(TRANSMISSION, TRANSMISSION_CL, TRANSMISSION_COM,COUNTRY_TITLE, ISO_YW, ISOYW) %>%
